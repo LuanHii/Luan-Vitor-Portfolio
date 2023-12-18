@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu portfólio</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Poppins:wght@100;200;300;400;700;800&family=Young+Serif&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script/script.js"></script>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="inicio">
+        <div id="circle"></div>
+        <div class="home-Desc">
+            <h2>Seja bem-vindo!</h2>
+            <p>Estudante de Análise e Desenvolvimento de Sistemas na UERJ 🎓 Apaixonado por aprender coisas novas 💡 <br>Desenvolvo jogos 🎮 <br> Aprendendo novas linguagens de programação 💻</p>
+            <a href="#projects" class="botao-link">Projetos</a>
+            <a href="#projects" class="botao-link">Contato</a>    
+        </div>
+    </div>
+
+    <div id="projects">
+        <h2>Projetos</h2>
+        <div id="projects-container">
+            <ul>
+                <li>
+                    <a href="#" class="link selected" data-descricao="Este é um Music Player. Qualquer áudio adicionado na pasta musics aparecerá na lista e poderá ser tocado no programa. Contém funções de pausar, encerrar, avançar e retroceder. O programa foi feito com Python utilizando Tkinter e Pygame." data-imagens='["img/music-player-1.png", "img/music-player-2.png", "img/music-player-3.png"]'>Music Player</a>
+                </li>
+                <li>
+                    <a href="#" class="link" data-descricao="Um sistema completo de Xadrez desenvolvido em Java com programação orientada a objetos. É possível jogar pelo console, basta digitar a peça desejada e o movimento a ser feito." data-imagens='["img/chess-1.png", "img/chess-2.png", "img/chess-3.png"]'>Sistema de Xadrez</a>
+                </li>
+                <li>
+                    <a href="#" class="link" data-descricao="Este projeto foi desenvolvido como trabalho acadêmico para a disciplina de Programação Orientada a Objetos na UERJ utilizando Java e SQL. O SIMCO é um sistema para gerenciar a manutenção de computadores em laboratórios de uma universidade. Suas funcionalidades incluem: Cadastro de usuários, Cadastro de Computadores, Cadastro de problemas, Geração de relatórios específicos." data-imagens='["img/Crud-1.png", "img/Crud-2.png", "img/Crud-3.png"]'>Crud Java-SQL</a>
+                </li>
+                <li>
+                    <a href="#" class="link" data-descricao="Um buscador de receitas feito com HTML, CSS, JavaScript e React. O site possui uma conexão com uma API de receitas que retorna diversas informações. O usuário pode pesquisar uma receita em inglês e clicar no botão para ver o vídeo no YouTube da receita." data-imagens='["img/recipe-1.png", "img/recipe-2.png", "img/recipe-3.png"]'>Buscador de Receitas</a>
+                </li>
+            </ul>
+
+            <div id="img-container">
+                <ul>
+                    <li><img class="desc-img" src="img/music-player-1.png" alt=""></li>
+                    <li><img class="desc-img" src="img/music-player-2.png" alt=""></li>
+                    <li><img class="desc-img" src="img/music-player-3.png" alt=""></li>
+                </ul>
+            </div>
+
+            <div id="desc-container">
+                <p id="desc">Descrição 1.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
