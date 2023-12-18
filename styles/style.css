@@ -10,10 +10,10 @@ html {
 }
 
 body {
-    background-color: #222222;
+    background-color: #222;
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    color: #FFF;
+    color: #fff;
     overflow-x: hidden;
 }
 
@@ -27,7 +27,7 @@ nav {
 
 nav ul {
     list-style: none;
-    padding-left: 0;
+    padding: 0;
     margin: 0;
     display: flex;
     justify-content: center;
@@ -47,13 +47,13 @@ nav ul li a {
     padding: 10px;
     text-decoration: none;
     font-weight: bold;
-    color: rgba(255, 255, 255, 0.50);
+    color: rgba(255, 255, 255, 0.5);
     transition: color 0.5s ease;
     font-size: 30px;
 }
 
 nav ul li a:hover {
-    color: white;
+    color: #fff;
 }
 
 #inicio {
@@ -67,17 +67,17 @@ nav ul li a:hover {
 .botao-link {
     display: inline-block;
     padding: 10px 20px;
-    color: rgba(255, 255, 255, 0.50);
+    color: rgba(255, 255, 255, 0.5);
     text-decoration: none;
     border-radius: 30px;
-    border: 3px solid #D5D5D5;
+    border: 3px solid #d5d5d5;
     background: #333;
     transition: border 0.5s ease, color 0.5s ease;
 }
 
 .botao-link:hover {
-    border: 3px solid #007CED;
-    color: white;
+    border: 3px solid #007ced;
+    color: #fff;
 }
 
 .home-Desc {
@@ -96,7 +96,7 @@ nav ul li a:hover {
     flex-shrink: 0;
     border-radius: 50%;
     background: #444;
-    box-shadow: inset 0 0 0 0.9em rgb(68, 68, 68);
+    box-shadow: inset 0 0 0 0.9em #444;
     background-image: url("../img/eu.jpeg");
     background-size: cover;
     background-position: center;
@@ -111,7 +111,7 @@ nav ul li a:hover {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding-top:200px ;
+    padding-top: 200px;
 }
 
 #projects h2 {
@@ -154,22 +154,22 @@ nav ul li a:hover {
     padding: 10px;
     text-decoration: none;
     font-weight: bold;
-    color: rgba(255, 255, 255, 0.50);
+    color: rgba(255, 255, 255, 0.5);
     font-size: 20px;
 }
 
 #projects-container li a:hover {
-    color:white;
+    color: #fff;
 }
 
 .link {
-    color: rgba(255, 255, 255, 0.50);
+    color: rgba(255, 255, 255, 0.5);
     transition: color 0.5s ease;
 }
 
 .link.selected,
 .link:hover {
-    color: white;
+    color: #fff;
 }
 
 #desc-container {
@@ -223,17 +223,17 @@ nav ul li a:hover {
 #git-button {
     display: inline-block;
     padding: 10px 20px;
-    color: rgba(255, 255, 255, 0.50);
+    color: rgba(255, 255, 255, 0.5);
     text-decoration: none;
     border-radius: 30px;
-    border: 3px solid #D5D5D5;
+    border: 3px solid #d5d5d5;
     background: #333;
     transition: border 0.5s ease, color 0.5s ease;
 }
 
 #git-button:hover {
-    border: 3px solid #007CED;
-    color: white;
+    border: 3px solid #007ced;
+    color: #fff;
 }
 
 #contact-container {
@@ -245,10 +245,6 @@ nav ul li a:hover {
     text-align: center;
     max-width: 1200px;
     margin: 0 auto;
-}
-
-ul {
-    list-style: none;
 }
 
 #about {
@@ -291,20 +287,10 @@ ul {
 .text-content p {
     margin: 5px 0 0;
     font-size: 14px;
-    color: rgb(131, 127, 127);
+    color: #837f7f;
 }
 
-#contact h2 {
-    margin: 0;
-    padding: 30px 0;
-    width: 100%;
-    text-align: center;
-    font-weight: bold;
-    font-size: 40px;
-    background-color: #252525;
-    margin-bottom: 20px;
-}
-
+#contact h2,
 #contact h3 {
     margin: 0;
     padding: 30px 0;
@@ -314,12 +300,13 @@ ul {
     font-size: 40px;
 }
 
-#contact-text {
-    display: flex;
+#contact h2 {
+    background-color: #252525;
+    margin-bottom: 20px;
 }
 
 h4 p {
-    color: rgb(131, 127, 127);
+    color: #837f7f;
     padding-left: 10px;
 }
 
@@ -357,18 +344,18 @@ textarea {
 
 button[type="submit"] {
     padding: 10px 20px;
-    border: 3px solid #D5D5D5;
+    border: 3px solid #d5d5d5;
     border-radius: 30px;
-    background-color:#444;
+    background-color: #444;
     font-size: 1em;
-    color:#D5D5D5;
+    color: #d5d5d5;
     cursor: pointer;
     transition: border 0.3s ease;
 }
 
 button[type="submit"]:hover {
-    border: 3px solid #005AA7;
-    color: white;
+    border: 3px solid #005aa7;
+    color: #fff;
 }
 
 @media screen and (max-width: 768px) {
@@ -390,7 +377,7 @@ button[type="submit"]:hover {
     }
 
     #circle {
-        width:50%;
+        width: 50%;
         max-width: 100%;
         margin: 50px auto;
         top: initial;
