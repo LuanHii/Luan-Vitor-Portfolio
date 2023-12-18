@@ -1,4 +1,3 @@
-/* Estilos gerais */
 html {
     scroll-behavior: smooth;
     box-sizing: border-box;
@@ -15,10 +14,9 @@ body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
     color: #FFF;
-    overflow-x: hidden; /* Evita a barra de rolagem horizontal */
+    overflow-x: hidden;
 }
 
-/* Estilos para a barra de navegação */
 nav {
     width: 100%;
     text-align: center;
@@ -51,20 +49,19 @@ nav ul li a {
     font-weight: bold;
     color: rgba(255, 255, 255, 0.50);
     transition: color 0.5s ease;
-    font-size: 30px
+    font-size: 30px;
 }
 
 nav ul li a:hover {
     color: white;
 }
 
-/* Estilos para a seção de início */
 #inicio {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding-bottom: 150px; /* Ajuste conforme necessário */
-    overflow: hidden; /* Evita o overflow horizontal */
+    padding-top: 100px;
+    overflow: hidden;
 }
 
 .botao-link {
@@ -109,13 +106,12 @@ nav ul li a:hover {
     top: 40%;
 }
 
-/* Estilos para a seção de projetos */
 #projects {
-    padding-top: 50px; /* Ajuste conforme necessário */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding-top:200px ;
 }
 
 #projects h2 {
@@ -130,6 +126,7 @@ nav ul li a:hover {
 
 #projects-container {
     width: 100%;
+    padding-bottom: 200px;
 }
 
 #projects-container ul {
@@ -137,20 +134,19 @@ nav ul li a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px; /* Espaço entre os projetos */
+    gap: 20px;
     text-align: center;
-    margin: 0; /* Remova margens padrão para evitar desalinhamento */
-    padding: 0; /* Remova paddings padrão para evitar desalinhamento */
+    margin: 0;
+    padding: 0;
 }
 
 #projects-container li {
-    flex: 1 1 300px; /* Tamanho mínimo e máximo dos projetos */
+    flex: 1 1 300px;
     padding: 10px;
-    max-width: 100%; /* Garante responsividade */
+    max-width: 100%;
     text-align: center;
-    box-sizing: border-box; /* Garante que o padding não aumente o tamanho do item */
-    margin: 10px; /* Adiciona margem para o espaçamento entre os itens */
-
+    box-sizing: border-box;
+    margin: 10px;
 }
 
 #projects-container li a {
@@ -160,7 +156,6 @@ nav ul li a:hover {
     font-weight: bold;
     color: rgba(255, 255, 255, 0.50);
     font-size: 20px;
-    
 }
 
 #projects-container li a:hover {
@@ -205,7 +200,7 @@ nav ul li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px; /* Espaço entre as imagens */
+    gap: 10px;
 }
 
 #img-container li {
@@ -219,7 +214,163 @@ nav ul li a:hover {
     transition: opacity 0.5s ease-in-out;
     box-shadow: 8px 8px 8px 1px rgb(0, 0, 0);
 }
-/* Estilos para telas menores que 768px */
+
+#button-container {
+    display: flex;
+    justify-content: center;
+}
+
+#git-button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: rgba(255, 255, 255, 0.50);
+    text-decoration: none;
+    border-radius: 30px;
+    border: 3px solid #D5D5D5;
+    background: #333;
+    transition: border 0.5s ease, color 0.5s ease;
+}
+
+#git-button:hover {
+    border: 3px solid #007CED;
+    color: white;
+}
+
+#contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+    gap: 50px;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+}
+
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-text {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact-text img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+#about .contact-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-content h4 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.text-content p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: rgb(131, 127, 127);
+}
+
+#contact h2 {
+    margin: 0;
+    padding: 30px 0;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    background-color: #252525;
+    margin-bottom: 20px;
+}
+
+#contact h3 {
+    margin: 0;
+    padding: 30px 0;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+#contact-text {
+    display: flex;
+}
+
+h4 p {
+    color: rgb(131, 127, 127);
+    padding-left: 10px;
+}
+
+#form-container {
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+}
+
+#form-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 1em;
+    background-color: #333;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    border: 3px solid #D5D5D5;
+    border-radius: 30px;
+    background-color:#444;
+    font-size: 1em;
+    color:#D5D5D5;
+    cursor: pointer;
+    transition: border 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    border: 3px solid #005AA7;
+    color: white;
+}
+
 @media screen and (max-width: 768px) {
     nav ul li {
         margin-right: 10px;
@@ -249,16 +400,10 @@ nav ul li a:hover {
     #projects h2 {
         font-size: 30px;
         padding-top: 30px;
-        
     }
 
     #projects-container li {
         flex: 1 1 100%;
         max-width: 100%;
-        
-    }
-
-    #projects-container ul li a {
-        
     }
 }
